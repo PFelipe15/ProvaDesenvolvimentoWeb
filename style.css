@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-agenda {
+  width: 263px;
+  height: 52px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  background: #00856f;
+  border-radius: 40px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  transition: all 1.3s;
+}
+.btn-agenda i {
+  font-size: 20px;
+}
+
+.btn-agenda:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 15px 20px rgba(20, 70, 40, 0.6);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #212529;
+}
+
+#container-home {
+  padding: 0 123px;
+  position: relative;
+  background-color: #dce9e2;
+  display: flex;
+  flex-direction: column;
+}
+#container-home header {
+  display: flex;
+  padding: 25px 0 25px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+#container-home header ul {
+  display: flex;
+  gap: 32px;
+}
+#container-home header ul li {
+  list-style: none;
+}
+#container-home header ul li a {
+  text-decoration: none;
+  font-style: normal;
+  transition: all 0.6s;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00856f;
+}
+#container-home header ul li a:hover {
+  padding-bottom: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid #00856f;
+}
+#container-home header button {
+  width: 190px;
+  height: 38px;
+  border: 1px solid #00856f;
+  border-radius: 40px;
+  color: #00856f;
+  font-weight: bold;
+  background-color: transparent;
+  transition: all 1.3s;
+}
+#container-home header button:hover {
+  box-shadow: 0px 15px 20px rgba(20, 70, 40, 0.6);
+  transform: scale(1.1);
+}
+#container-home #main-home {
+  display: flex;
+}
+#container-home #main-home #main-top {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#container-home #main-home #main-top #main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#container-home #main-home #main-top #main-text h4 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: #00856f;
+}
+#container-home #main-home #main-top #main-text h1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 130%;
+}
+#container-home #main-home #main-top #main-text p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #495057;
+}
+
+#container-numbers {
+  position: absolute;
+  margin: 0 123px 0 123px;
+  height: 170px;
+  left: 0;
+  right: 0;
+  top: 590px;
+  z-index: 50;
+  background: #fffaf1;
+  border: 1px solid #dce9e2;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#container-numbers .number-info:nth-child(1),
+#container-numbers .number-info:nth-child(2) {
+  border-right: 1px solid #00856f;
+}
+#container-numbers .number-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+#container-numbers .number-info h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: #212529;
+}
+#container-numbers .number-info span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #00856f;
+}
+
+#container-services {
+  padding-top: 80px;
+  display: flex;
+  background-color: #f7f9f9;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+#container-services #services-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+#container-services #services-header span {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #00856f;
+}
+#container-services #container-cards {
+  padding: 0 123px;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#container-services #container-cards .service-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+#container-services #container-cards .service-cards .card {
+  width: 347px;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  border: 1px solid #dce9e2;
+  border-radius: 6px;
+  transition: all 1.3s;
+}
+#container-services #container-cards .service-cards .card i {
+  font-size: 30px;
+  color: #00856f;
+}
+#container-services #container-cards .service-cards .card h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #212529;
+}
+#container-services #container-cards .service-cards .card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495057;
+}
+#container-services #container-cards .service-cards .card:hover {
+  box-shadow: 0px 15px 20px rgba(20, 70, 40, 0.6);
+  transform: scale(1.1);
+}
+
+#container-about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #fffaf1;
+  padding: 0 123px;
+  gap: 67px;
+}
+#container-about #about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#container-about #about-text span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: #00856f;
+}
+#container-about #about-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495057;
+}
+
+#container-contacts {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 0 123px;
+  justify-content: space-between;
+  gap: 141px;
+  background: #ffffff;
+}
+#container-contacts #contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#container-contacts #contact-info div {
+  display: flex;
+  align-items: center;
+}
+#container-contacts #contact-info div i {
+  color: #00856f;
+  font-size: 30px;
+}
+#container-contacts #contact-info div span {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495057;
+}
+
+footer {
+  display: flex;
+  background-color: #00856f;
+  padding: 80px 123px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer #footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+footer #footer-info span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fffaf1;
+}
+footer #footer-info p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fffaf1;
+}
+footer #footer-social {
+  display: flex;
+  gap: 40px;
+}
+footer #footer-social a {
+  transition: all 1.3s;
+  text-decoration: none;
+}
+footer #footer-social a i {
+  background-color: transparent;
+  font-size: 40px;
+  color: #ffffff;
+}
+footer #footer-social a:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
